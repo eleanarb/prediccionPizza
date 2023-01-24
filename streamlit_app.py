@@ -4,10 +4,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import altair as alt
-import sklearn
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
-from sklearn.ensemble import RandomForestRegressor
+
 
 """
 # Predicción del Precio de una Pizza con Machine Learning
@@ -15,22 +12,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 st.set_page_config(layout="wide")
 
-#Carga de los datos formateados
-df = pd.read_csv('pizzaF.csv')
-#División del dataset
-X = df.drop(['price'], axis=1)
-y = df['price']
-#Modelacion
-model_rf = RandomForestRegressor(random_state=42)
-# Entrenamiento
-model_rf.fit(X_train, y_train)
 
-# Predicciones
-pred_rf = model_rf.predict(X_test)
-pred_rf_trn = model_rf.predict(X_train)
-
-prueba = pd.DataFrame({"company":[2], "diameter":[14], "topping":[8], "variant":[1], "size":[5], "extra_sauce":[0], "extra_cheese":[1], "extra_mushrooms":[1]})
-precio = (model_rf.predict(prueba))
 
 def form_callback():
     sum = st.session_state.x1 + st.session_state.x2 + st.session_state.x3 + st.session_state.x4
