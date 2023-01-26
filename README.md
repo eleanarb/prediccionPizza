@@ -1,6 +1,5 @@
-# Welcome to Streamlit!
+# Predicción de precios de pizzas
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire. :heart:
+En el siguiente proyecto, utilizaremos un conjunto de datos con características de las pizzas con la finalidad de predecir los precios a través de unos parámetros dados.
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
+https://eleanarb-prediccionpizza-streamlit-app-4du52k.streamlit.app/
